@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 13rem;
+    
+}
+
+
+.outer-circle {
+    border: 2px grey dashed;
+    border-radius: 50%;
+    height: 50rem;
+    width: 50rem;
+   
+}
+
+.circle-two {
+    border: 2px grey dashed;
+    border-radius: 50%;
+    height: 40rem;
+    width: 40rem;
+    margin-left: 5rem;
+    margin-top: -45rem;
+}
+
+.circle-three {
+    border: 2px grey dashed;
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+    margin-left: 10rem;
+    margin-top: -35rem;
+}
+
+.circle-four {
+    border: 2px green dashed;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    margin-left: 15rem;
+    margin-top: -25rem;
+}
+
+.circle-title a {
+    background-color: rgb(145, 70, 214);
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: white;
+
+}
+
+.circle-title {
+    position: absolute;
+    margin-top: -35.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-circle-title {
+        margin-left: 23.9rem;
+}
+
+.circle-two-title {
+    position: absolute;
+    margin-top: 3.8rem;
+    margin-left: 23.7rem;
+}
+
+.circle-three-title {
+    position: absolute;
+    margin-top: 8.9rem;
+    margin-left: 24rem;
+}
+
+.circle-four-title {
+    position: absolute;
+    margin-top: 13.9rem;
+    margin-left: 23.7rem;
+}
+
+.react-icon-dash {
+    /* display: block; */
+    /* position: relative;
+    border-top: 2px dashed blueviolet;
+    rotate: 30deg;
+    width: 150px;
+    animation: animate .4s;     */
+
+    border-style: dashed;
+    width: 350px;
+    animation: animate 1s forwards;
+    color: blue;
+    position: absolute;
+    margin-top: -4.6rem;
+    margin-left: 12rem;
+    
+}
+
+.reactToHtm-line {
+    border-style: dashed;
+    width: 15rem;
+    animation: reactToHtm 1s forwards;
+    color: blue;
+    position: absolute;
+    margin-top: -.2rem;
+    margin-left: 6.5rem;
+}
+
+.reactToHtm-div{
+    rotate: 159deg;
+    display: none;
+}
+
+.htmToS-line {
+    border-style: dashed;
+    width: 15rem;
+    animation: htmToS 1s forwards;
+    color: blue;
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 6.5rem;
+
+}
+
+.htmToS-div {
+    rotate: 405deg;
+    display: none;
+}
+
+
+.htm-icon-dash {
+    border-style: dashed;
+    width: 15rem;
+    animation: htmToReact 1s forwards;
+    color: blue;
+    position: absolute;
+    margin-top: -19rem;
+    margin-left: 20.5rem;
+}
+
+
+
+.htmLogo-dash-div {
+    rotate: 339deg;
+    display: none;
+}
+
+.dash-line {
+    rotate: 63deg;
+    display: none;
+}
+
+.react-icon {
+    padding: 10px;
+    width: 40px;
+    margin-top: 2rem;
+    margin-left: 13rem;
+    
+    opacity: 0.2;
+}
+
+.cy-icon {
+    padding: 5px;
+    width: 40px;
+    margin-top: 3rem;
+    margin-left: 16rem;
+    opacity: .2;
+}
+
+.php-icon {
+    position: absolute;
+    padding: 5px;
+    width: 40px;
+    margin-top: -.05rem;
+    margin-left: -4rem;
+    opacity: .2;
+}
+
+.htmLogo-icon {
+    position: absolute;
+    padding: 5px;
+    width: 40px;
+    margin-top: -17rem ;
+    margin-left: 11.5rem;
+    opacity: .2;
+}
+
+.sLogo-icon {
+    position: absolute;
+    padding: 5px;
+    width: 40px;
+    margin-top: -10rem ;
+    margin-left: 19rem;
+    opacity: .2;
+}
+
+.sLogo-icon:hover {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    transition: ease-in-out .5s;
+    opacity: 1;
+}
+
+.htmLogo-icon:hover {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    transition: ease-in-out .5s;
+    opacity: 1;
+}
+
+.htmLogo-icon:hover + .htmLogo-dash-div {
+    display: block;
+}
+
+.php-icon:hover {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    transition: ease-in-out .5s;
+    opacity: 1;
+}
+
+.cy-icon:hover {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    transition: ease-in-out .5s;
+    opacity: 1;
+}
+.react-icon:hover {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    transition: ease-in-out .5s;
+    opacity: 1;
+}
+
+.react-icon:hover ~ .cy-icon {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.react-icon:hover + .dash-line {
+    display: block;    
+}
+
+/* Testing in progress.....  */
+.active {
+    background: rgb(163, 228, 219);
+    border-radius: 50px;
+    transition: ease-in-out .5s;
+    opacity: 1;
+}
+
+.open-line {
+    display: block;
+}
+
+@keyframes reactToHtm {
+    from {
+        width : 0rem;
+      }
+      to {
+        width: 15.2rem;
+      }
+}
+
+@keyframes htmToS {
+    from {
+        width : 0rem;
+      }
+      to {
+        width: 8rem;
+      }
+}
+
+@keyframes htmToReact {
+    from {
+        width : 0rem;
+      }
+      to {
+        width: 15rem;
+      }
+}
+
+@keyframes animate {
+    /* 0% {
+        width: 0rem;
+    }
+
+    50% {
+        width: 25rem;
+    }
+
+    100% {
+        width: 50rem;
+    } */
+
+    from {
+        width : 0rem;
+      }
+      to {
+        width: 3.8rem;
+      }
+}
+
+
+
+
+/* .wavy::before {
+    content: 'aaaaaa';
+    position: absolute;
+    font-size: 3em;
+    color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(2, 2, 2);
+    text-decoration-line: underline;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(1px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+} */
